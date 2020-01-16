@@ -1,10 +1,9 @@
-const axios = require('axios');
 const Dev = require('../models/Dev');
 const parseStringAsArray = require('./utils/parseStringAsArray');
 
 module.exports = {
     async index(req, res) {
-        const { lat, lng, techs } = request.query;
+        const { lat, lng, techs } = req.query;
 
         const techsArray = parseStringAsArray(techs);
 
